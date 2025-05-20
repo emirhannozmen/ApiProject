@@ -20,7 +20,7 @@ namespace ApiProject.WebApi.Controllers
         public IActionResult ChefList()
         {
             var values = _context.Chefs.ToList();
-            return Ok("Şef Listesi");
+            return Ok(values);
         }
 
         [HttpPost]
